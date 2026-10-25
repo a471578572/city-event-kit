@@ -1,0 +1,27 @@
+name: Check template
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Run tests
+        run: npm test
+      - name: Check for private event data
+        run: npm run check:privacy
+      - name: Build distributable package
+        run: npm run package

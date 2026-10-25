@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0755ff">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="城市活动路演顺序，打开即可查看。">
+  <title>路演顺序</title>
+  <link rel="stylesheet" href="./guide.css">
+  <link rel="stylesheet" href="./order.css">
+  <script type="module" src="./order.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#presentation-list">跳到路演顺序</a>
+  <div class="guide-shell order-shell">
+    <header class="guide-header">
+      <a class="guide-brand" href="./guide.html" data-site-brand>城市活动评比</a>
+      <nav aria-label="活动导航"><a href="./guide.html">活动指引</a><a href="./">选手 / 观众入口</a><a href="./judges.html">评委介绍</a></nav>
+    </header>
+    <main>
+      <section class="order-hero" aria-labelledby="order-title">
+        <div><p class="eyebrow" data-site-date></p><h1 id="order-title">下一队，<span>准备上场<i>。</i></span></h1><p class="order-subtitle" data-site-name></p><p class="order-intro">所有队伍随机安排路演先后。<strong>这是出场顺序，不代表成绩。</strong></p></div>
+        <div class="order-label" aria-hidden="true"><span>PRESENTATION</span><strong>ON AIR</strong><span>把想法变成作品</span></div>
+      </section>
+      <section class="order-board" aria-labelledby="order-list-title">
+        <div class="order-board-head"><div><span class="section-kicker">PRESENTATION ORDER / 路演名单</span><h2 id="order-list-title">路演顺序</h2></div><div class="order-tools"><button class="pixel-button" id="order-refresh" type="button">刷新顺序</button><button class="order-tool" id="order-fullscreen" type="button">全屏展示</button><button class="order-tool" id="order-print" type="button">打印名单</button></div></div>
+        <div class="order-meta"><p id="order-summary">正在读取队伍…</p><p id="order-updated">每 30 秒自动刷新</p></div>
+        <p id="order-status" class="order-status" role="status" aria-live="polite">正在读取路演顺序…</p>
+        <ol id="presentation-list" class="presentation-list" aria-label="已安排的路演顺序" aria-busy="true"></ol>
+        <div id="order-empty" class="order-empty" hidden></div>
+      </section>
+      <section id="order-pending" class="order-pending" aria-labelledby="pending-title" hidden><div class="pending-heading"><div><span class="section-kicker">WAITING / 等待安排</span><h2 id="pending-title">还未排入顺序的队伍</h2></div><p id="pending-count"></p></div><p class="pending-note">以下队伍尚未参加本次抽签。请工作人员更新路演顺序；页面不会自行改变已公布的顺序。</p><ul id="pending-list" class="pending-list"></ul></section>
+      <p class="order-footnote">名单以工作人员公布的最新顺序为准。队伍有变动时，请刷新查看。</p>
+      <section class="guide-section partners-section" aria-labelledby="order-partners-title"><div class="section-heading"><div><span class="section-kicker">一起让好点子发生</span><h2 id="order-partners-title">活动伙伴</h2></div></div><div id="order-partners" class="guide-partner-grid"></div></section>
+    </main>
+    <footer class="guide-footer"><p data-site-footer></p><a href="#order-title">回到页首 ↑</a></footer>
+  </div>
+  <noscript><p class="noscript-message">请开启 JavaScript 查看最新路演顺序，也可以向现场工作人员查询。</p></noscript>
+</body>
+</html>

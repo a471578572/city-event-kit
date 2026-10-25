@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0755ff">
+  <meta name="referrer" content="no-referrer">
+  <title>城市活动评比</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23194d42'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-size='25' fill='white'%3E评%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./certificates.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div id="app"><div class="loading">正在连接现场评比…</div></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog"><div id="dialog-body"></div></dialog>
+  <script>
+    if(location.protocol==='file:')document.getElementById('app').textContent='请先启动本地服务，再使用终端显示的活动地址。直接打开网页文件无法保存评分和投票。';
+  </script>
+  <noscript>请开启浏览器的 JavaScript 后使用评分与投票。</noscript>
+</body>
+</html>

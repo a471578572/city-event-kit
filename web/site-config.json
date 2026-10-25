@@ -1,0 +1,11 @@
+{
+  "name": "城市创作挑战赛",
+  "city": "示例城市",
+  "date": "2026-01-01",
+  "subtitle": "一起把想法变成作品",
+  "logos": [{ "name": "活动主办方", "src": "assets/event-mark.svg" }],
+  "registrationUrl": "",
+  "handbookUrl": "",
+  "publicPlayerWall": false,
+  "certificateIssuer": "活动组委会"
+}

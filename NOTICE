@@ -1,0 +1,18 @@
+City Event Kit
+Copyright (c) 2026 City Event Kit contributors
+
+项目代码和随附原创通用模板按 MIT License 提供，见 LICENSE。
+使用、修改和再分发时请保留版权声明及许可文本。
+
+第三方二维码代码
+web/qr.js 包含 QRCode for JavaScript 的代码及 qrcode-terminal 的适配来源。
+原作者：Copyright (c) 2009 Kazuhiko Arase。
+原作 MIT 许可、上游 Apache License 2.0 及来源说明完整保留于：
+licenses/qr-third-party.txt
+“QR Code” 是 DENSO WAVE INCORPORATED 的注册商标。
+
+素材范围
+本仓库不提供任何现实活动的主办授权、组织标志、真实报名资料、
+真实海报或原活动证书素材。使用者自行加入的名称、标志、图片、
+名单及活动内容由其自行确认使用权限，不因代码的 MIT 许可而获得授权。
+通用证书是可编辑的排版模板，不代表任何组织对活动或获奖结果的认可。

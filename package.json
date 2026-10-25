@@ -1,0 +1,17 @@
+{
+  "name": "city-event-kit",
+  "version": "1.0.0",
+  "description": "独立部署的城市活动评分、投票、组队与证书工具",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env cloud/local.mjs",
+    "demo": "node scripts/demo.mjs",
+    "test": "node --test cloud/*test.mjs scripts/*test.mjs",
+    "check:privacy": "node scripts/check-privacy.mjs",
+    "package": "node scripts/package.mjs"
+  },
+  "repository": { "type": "git", "url": "https://github.com/a471578572/city-event-kit.git" }
+}
